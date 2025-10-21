@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.4.5
+%define		kdeplasmaver	6.5.0
 %define		qtver		5.15.2
 %define		kpname		kwrited
 Summary:	kwrited
 Name:		kp6-%{kpname}
-Version:	6.4.5
-Release:	2
+Version:	6.5.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		Base
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	5057090b805cb6611a71075e598a1cd2
+# Source0-md5:	8dab966a5335ff648b68fd5683f3f989
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6Gui-devel >= %{qtver}
@@ -60,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/kded/kwrited.so
+%{_libdir}/qt6/plugins/kf6/kded/kwrited.so
 %{_datadir}/knotifications6/kwrited.notifyrc
