@@ -36,6 +36,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 KDE Plasma daemon listening for wall and write messages.
 
+%description -l pl.UTF-8
+Demon KDE Plazma nasłuchujący wiadomości "wall" i "write".
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
