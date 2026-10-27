@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.8.0
+%define		kdeplasmaver	6.8.2
 %define		qtver		5.15.2
 %define		kpname		kwrited
 Summary:	kwrited
 Name:		kp6-%{kpname}
-Version:	6.8.0
+Version:	6.8.2
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		Base
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	3e3b2a5fe2bee6008b04f657f3fc8d7d
+# Source0-md5:	0bc9235db9aaffa9b2f9e83026ab9538
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6Gui-devel >= %{qtver}
